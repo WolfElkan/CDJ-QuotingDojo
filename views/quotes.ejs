@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>QuotingDojo</title>
+	</head>
+	<body>
+		<h2>Here are the awesome quotes!</h2>
+		<% for (var q in quotes) { %>
+			<span class="quote">"<%= quotes[q].content %>"</span>
+			<span class="info">- <%= quotes[q].author %> at <%= quotes[q].crat_str %></span>
+			<hr>
+		<% } %>
+	</body>
+</html>

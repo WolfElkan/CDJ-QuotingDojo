@@ -1,0 +1,26 @@
+{
+  "name": "quoting_dojo",
+  "version": "1.0.0",
+  "description": "CodingDojo Assignment: http://learn.codingdojo.com/m/4/3720/25009",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WolfElkan/CDJ-QuotingDojo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WolfElkan/CDJ-QuotingDojo/issues"
+  },
+  "homepage": "https://github.com/WolfElkan/CDJ-QuotingDojo#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dateformat": "^2.0.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.2"
+  }
+}

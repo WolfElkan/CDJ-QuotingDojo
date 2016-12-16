@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>QuotingDojo</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1>Welcome to QuotingDojo</h1>
+		<form action="/add" method="post">	
+			<table>
+				<tr>
+					<td>
+						<h2>Your name:</h2>
+					</td>
+					<td>
+						<input type="text" name="name">
+						<span class="error"><%= blank(error.name) %></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2>Your quote:</h2>
+					</td>
+					<td>
+						<textarea name="quote"></textarea>
+						<span class="error"><%= blank(error.quote) %></span>
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="add" value="true">
+			<input type="submit" value="Add my quote!">
+		</form>
+		<!-- <form>
+			<input type="hidden" name="add" value="false">
+			<input type="submit" value="Skip to quotes!">
+		</form> -->
+		<a href="/quotes"><button>Skip to quotes!</button></a>
+	</body>
+</html>
